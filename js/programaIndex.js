@@ -1,72 +1,68 @@
 $(document).ready(function(){
-
-	// Slider
-	if(window.location.href.indexOf('index') > -1){
 	  
-	  $('.galeria').bxSlider({
-	    mode: 'fade',
-	    captions: false,
-	    slideWidth: 1200,
-	    responsive: true,
-	    pager: true
-	  });
-
-	}
-
-
-	// Posts
-	if(window.location.href.indexOf('index') > -1){
-		var posts = [
-			{
-				title: 'Prueba de titulo 1',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-			{
-				title: 'Prueba de titulo 2',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-			{
-				title: 'Prueba de titulo 3',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-			{
-				title: 'Prueba de titulo 4',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-			{
-				title: 'Prueba de titulo 5',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-			{
-				title: 'Prueba de titulo 6',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
-			},
-		];
-
-		posts.forEach((item, index) => {
-			var post = `
-				<article class="post">
-					<h2>${item.title}</h2>
-					<span class="date">${item.date}</span>
-					<p>
-						${item.content}
-					</p>
-					<a href="#" class="button-more">Leer más</a>
-				</article>
-			`;
-
-			$("#posts").append(post);
-		});
-	}
+	// SLIDER
+	$('.galeria').bxSlider({
+		mode: 'fade',
+		captions: false,
+		slideWidth: 1200,
+		responsive: true,
+		pager: true
+	});
 
 
-	// Selector de tema
+	// POSTS
+	let fecha = new Date();
+
+	var posts = [
+		{
+			title: 'Prueba de titulo 1',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+		{
+			title: 'Prueba de titulo 2',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+		{
+			title: 'Prueba de titulo 3',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+		{
+			title: 'Prueba de titulo 4',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+		{
+			title: 'Prueba de titulo 5',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+		{
+			title: 'Prueba de titulo 6',
+			date: 'Publicado el dia ' + fecha.getDate() + " de " + fecha.toLocaleString('default', {month: 'long'}) + " del " + fecha.getFullYear(),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac ullamcorper justo. Fusce sapien nibh, tempor fermentum mauris ac, tincidunt maximus diam. Quisque bibendum sed dui sit amet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam sem, scelerisque sit amet libero nec, congue blandit dolor. Aliquam a vehicula mi. Morbi id convallis dolor. Nulla eu libero nec nulla fermentum viverra quis at magna. Quisque rutrum augue nulla, bibendum viverra sapien viverra vel. Quisque malesuada ultrices felis eu porttitor.'
+		},
+	];
+
+	posts.forEach((item, index) => {
+		var post = `
+			<article class="post">
+				<h2>${item.title}</h2>
+				<span class="date">${item.date}</span>
+				<p>
+					${item.content}
+				</p>
+				<a href="#" class="button-more">Leer más</a>
+			</article>
+		`;
+
+		$("#posts").append(post);
+	});
+	
+
+	// SELECCION DE TEMA
 	var theme = $("#theme");
 
 	$("#to-green").click(function(){
@@ -80,9 +76,8 @@ $(document).ready(function(){
 	$("#to-blue").click(function(){
 		theme.attr("href", "css/blue.css");
 	});
-
 	
-	// Scroll arriba de la web
+	// BOTON PARA IR ARRIBA
 	$('.subir').click(function(e){
 		e.preventDefault();
 
@@ -93,13 +88,11 @@ $(document).ready(function(){
 		return false;
 	});
 
-	// Login falso
-
+	// LOGIN FALSO
 	$("#login form").submit(function(){
 		var form_name = $("#form_name").val();
 
 		localStorage.setItem("form_name", form_name);
-
 	});
 
 	var form_name = localStorage.getItem("form_name");
@@ -116,7 +109,6 @@ $(document).ready(function(){
 			localStorage.clear();
 			location.reload();
 		});
-
 	}
 
 

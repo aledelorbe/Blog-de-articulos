@@ -1,19 +1,24 @@
 /* Los estilos blue, green y red almancenan los colores de los botones y la imagen del fondo de la 
 pagina web. */
 
+/* Se agrega la imagen de cielo azul como fondo en este tema. */
 body{
 	background: url("https://s1.eestatic.com/2020/06/03/curiosidades/curiosidades_494961313_153077109_1024x576.jpg");
 	background-attachment: fixed;
+	background-size: cover;
 }
 
+/* El fondo del titulo se cambia a este color... */
 #logo{
 	background: #1F87C4;
 }
 
+/* Cuando el usuario se posiciona sobre una opcion del menu se cambia a este color...*/
 #menu ul li:hover{
 	background: #1F87C4;
 }
 
+/* El boton de "leer mas..." se cambia a este color... */
 .button-more{
 	background: #1F87C4;
 }

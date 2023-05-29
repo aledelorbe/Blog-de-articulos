@@ -1,18 +1,24 @@
 /* Los estilos blue, green y red almancenan los colores de los botones y la imagen del fondo de la 
 pagina web. */
+
+/* Se agrega la imagen de hojas de otoño como fondo en este tema. */
 body{
 	background: url("https://png.pngtree.com/background/20220721/original/pngtree-maple-leaves-are-red-like-fire-in-autumn-picture-image_1700743.jpg");
 	background-attachment: fixed;
+	background-size: cover;
 }
 
+/* El fondo del titulo se cambia a este color... */
 #logo{
 	background: #CA3413;
 }
 
+/* Cuando el usuario se posiciona sobre una opcion del menu se cambia a este color...*/
 #menu ul li:hover{
 	background: #CA3413;
 }
 
+/* El boton de "leer mas..." se cambia a este color... */
 .button-more{
 	background: #CA3413;
 }

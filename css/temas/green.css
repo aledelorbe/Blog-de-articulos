@@ -1,19 +1,23 @@
 /* Los estilos blue, green y red almancenan los colores de los botones y la imagen del fondo de la 
 pagina web. */
 
+/* Se agrega la imagen de hojas verdes como fondo en este tema. */
 body{
 	background: url("https://p1.pxfuel.com/preview/234/634/343/leaves-foliage-tree-spring-leaves.jpg");
 	background-attachment: fixed;
 }
 
+/* El fondo del titulo se cambia a este color... */
 #logo{
 	background: #235E3D;
 }
 
+/* Cuando el usuario se posiciona sobre una opcion del menu se cambia a este color...*/
 #menu ul li:hover{
 	background: #235E3D;
 }
 
+/* El boton de "leer mas..." se cambia a este color... */
 .button-more{
 	background: #235E3D;
 }
