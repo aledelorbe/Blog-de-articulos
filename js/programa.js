@@ -59,6 +59,7 @@ $(document).ready(function(){
 		return false;
 	});
 
+	
 	// LOGIN FALSO
 	$("#login form").submit(function(){
 		var form_name = $("#form_name").val();

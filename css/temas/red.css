@@ -22,3 +22,8 @@ body{
 .button-more{
 	background: #CA3413;
 }
+
+/* El tab del acordeon que se encuentre seleccionado */
+h3[tabindex="0"]{
+	background: #CA3413;
+}

@@ -19,10 +19,9 @@ h2{
 	margin-top: 20px;
 }
 
-/* Cada Tab (titulos de cada seccion del acordeon) */
-.bx-wrapper, .bx-viewport {
-	height: 250px !important;
+/* Todos los tabs el seleecionado y no seleccionados */
+h3[tabindex="0"], h3[tabindex="-1"]{
+	border: 1px solid #ccc;
 }
-
 
 

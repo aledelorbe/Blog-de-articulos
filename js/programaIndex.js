@@ -46,6 +46,8 @@ $(document).ready(function(){
 		},
 	];
 
+	// El bloque de html dentro de este bloque de codigo, primero se probo en html (con dos muestras) para 
+	// saber ocmo se veria cuando se realizara este recorrido. ************
 	posts.forEach((item, index) => {
 		var post = `
 			<article class="post">
