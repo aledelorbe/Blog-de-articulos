@@ -1,3 +1,5 @@
+// PROGRAMACION PARA TODAS LAS PAGINAS WEB
+
 $(document).ready(function(){
 
 	// SELECCION DE TEMA
